@@ -37,7 +37,7 @@ Function.prototype.myCall = function(thisContext, ...args) {
    
     return function(...additionalArgs) {
      
-        const allArgs = [...initialArgs, ...additionalArgs];
+        const allArgs = [...args, ...additionalArgs];
 
     
         thisContext = thisContext || globalThis;
